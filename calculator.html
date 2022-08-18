@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's make a discount calculator.</title>
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-neutral-300">
+    <main>
+        <section>
+            <h1 class="text-center text-3xl font-extrabold mt-28 text-white">Welcome to our discount calculator.</h1>
+            <div class="w-9/12 mx-auto bg-red-200 mt-10 py-20 rounded-3xl">
+                <h1 class="text-3xl mb-5 font-extrabold text-stone-600 text-center">Input your item price and get <span
+                        class="text-orange-600">30% discount.</span>
+                </h1>
+                <input id="inputPrice" class="block w-9/12 mb-3 mx-auto text-center rounded-lg" type="text"
+                    placeholder="Enter your priduct price">
+                <input id="cupon" class="block w-1/4 mx-auto text-center rounded-lg" type="text"
+                    placeholder="Enter your discount cupon">
+                <button id="applyBtn"
+                    class="bg-white px-4 py-2 mx-auto block mt-3 rounded-lg font-extrabold text-orange-700 hover:bg-green-300">Apply</button>
+                <h1 class="block w-1/5 mx-auto bg-white mt-3 px-2 py-1 rounded-md font-bold text-gray-600">Your final
+                    price is
+                    <span class="text-amber-500">$</span><span id="finalPrice" class="text-gray-600">00</span>
+                </h1>
+            </div>
+        </section>
+    </main>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
